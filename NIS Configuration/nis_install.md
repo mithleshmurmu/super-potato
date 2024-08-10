@@ -108,4 +108,11 @@ domain concept.lan server master.concept.lan
 ```
 vi /etc/hosts
 ```
-
+```
+# add hosts that are in NIS domain (server/client)
+192.168.10.1   master.concept.lan master
+192.168.10.2   node01.concept.lan node01
+```
+```
+authselect select nis --force
+```
