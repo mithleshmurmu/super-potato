@@ -175,7 +175,7 @@ getent passwd
 ```
 
 ### Configure NIS Slave Server :-
-
+```
 +----------------------+               |              +----------------------+
 | [    NIS Server    ] | 192.168.10.1  | 192.168.10.3 | [     NIS Slave    ] |
 |  master.concept.lan  +---------------+--------------+   yp01.concept.lan   |
@@ -186,5 +186,5 @@ getent passwd
 |  node01.concept.lan  +---------------+
 |                      |
 +----------------------+
-
+```
 
