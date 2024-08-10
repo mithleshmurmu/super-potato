@@ -161,4 +161,15 @@ master.concept.lan
 
 #change NIS password
 [redhat@node01 ~]$ yppasswd
+
+Changing NIS account information for redhat on master.concept.lan.
+Please enter old password:     # current password
+Changing NIS password for redhat on master.concept.lan
+Please enter new password:     # new one
+Please retype new password:
+
+The NIS password has been changed on master.concept.lan
+```
+```
+getent passwd
 ```
