@@ -227,3 +227,14 @@ have just created will be used, instead of the /etc ASCII files.
 
 ----------------------------------------------------------------
 ```
+```
+
+[root@node01 ~]# vi /etc/yp.conf
+
+# add NIS slave to the end
+# [domain (NIS domain) server (NIS server)]
+domain concept.lan server master.concept.lan
+domain concept.lan server master.concept.lan
+
+[root@node01 ~]# systemctl restart ypbind
+```
