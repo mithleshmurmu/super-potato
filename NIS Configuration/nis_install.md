@@ -39,3 +39,17 @@ vi /etc/hosts
 systemctl enable --now rpcbind ypserv ypxfrd yppasswdd nis-domainname
 ```
 update NIS databases
+```
+/usr/lib64/yp/ypinit -m
+```
+```
+At this point, we have to construct a list of the hosts which will run NIS
+servers.  dlp.srv.world is in the list of NIS server hosts.  Please continue to add
+the names for the other hosts, one per line.  When you are done with the
+list, type a <control D>.
+        next host to add:  master.concept.lan
+        next host to add:  ### # Ctrl + D key
+The current list of NIS servers looks like this:
+
+master.concept.lan
+```
