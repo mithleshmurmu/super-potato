@@ -87,3 +87,10 @@ make
 ```
 
 ### On the Client Node01 Node :-
+```
+yum install ypbind rpcbind oddjob-mkhomedir
+```
+set NIS domain
+```
+ypdomainname concept.lan
+```
