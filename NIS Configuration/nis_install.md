@@ -10,3 +10,11 @@ hostnamectl set-hostname master.concept.lan
 ```
 yum install ypserv rpcbind
 ```
+
+set NIS domain
+```
+ypdomainname concept.lan
+```
+```
+echo "NISDOMAIN=concept.lan" >> /etc/sysconfig/network
+```
