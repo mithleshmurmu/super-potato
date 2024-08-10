@@ -147,6 +147,7 @@ systemctl enable --now rpcbind ypbind nis-domainname oddjobd
 ```
 exit
 ```
+```
 CentOS Linux 8 (Core)
 Kernel 4.18.0-80.7.1.el8_0.x86_64 on an x86_64
 
@@ -160,3 +161,4 @@ master.concept.lan
 
 #change NIS password
 [redhat@node01 ~]$ ```yppasswd```
+```
