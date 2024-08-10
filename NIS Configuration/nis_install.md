@@ -78,3 +78,10 @@ master.concept.lan has been set up as a NIS master server.
 
 Now you can run ypinit -s master.concept.lan on all slave server.
 ```
+=>If you add local user or local group, new hosts in [/etc/hosts] on NIS Server, then Apply changes to NIS databases like follows.
+```
+cd /var/yp
+```
+```
+#make
+```
