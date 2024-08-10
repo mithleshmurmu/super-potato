@@ -35,3 +35,7 @@ vi /etc/hosts
 192.168.10.1   master.concept.lan master
 192.168.10.2   node01.concept.lan node01
 ```
+```
+systemctl enable --now rpcbind ypserv ypxfrd yppasswdd nis-domainname
+```
+update NIS databases
