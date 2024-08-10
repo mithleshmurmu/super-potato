@@ -4,3 +4,9 @@
 Stop and Disable firewalld
 
 Disable the selinux file
+```
+hostnamectl set-hostname master.concept.lan
+```
+```
+yum install ypserv rpcbind
+```
