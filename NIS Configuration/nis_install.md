@@ -141,3 +141,9 @@ set if you need (create home directory when initial login)
 ```
 authselect enable-feature with-mkhomedir
 ```
+```
+systemctl enable --now rpcbind ypbind nis-domainname oddjobd
+```
+```
+exit
+```
