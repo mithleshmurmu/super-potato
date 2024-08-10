@@ -188,3 +188,26 @@ getent passwd
 +----------------------+
 ```
 
+```
+yum install ypserv rpcbind
+```
+```
+vi /var/yp/securenets
+```
+```
+# specify range of network you allow to access NIS clients
+255.0.0.0       127.0.0.0
+255.255.255.0   192.168.10.0
+```
+```
+vi /etc/hosts
+```
+```
+# add hosts that are in NIS domain (server/client)
+192.168.10.1   master.concept.lan master
+192.168.10.2   node01.concept.lan node01
+192.168.10.3   yp01.concept.lan yp01
+```
+```
+systemctl enable --now rpcbind ypserv ypxfrd yppasswdd nis-domainname
+```
