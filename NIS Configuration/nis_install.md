@@ -155,8 +155,8 @@ Password:
 [redhat@node01 ~]$       # just logined
 
 #confirm binded NIS server
-[redhat@node01 ~]$ ypwhich
+[redhat@node01 ~]$ ```ypwhich```
 master.concept.lan
 
 #change NIS password
-[redhat@node01 ~]$ yppasswd
+[redhat@node01 ~]$ ```yppasswd```
