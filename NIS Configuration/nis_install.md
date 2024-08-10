@@ -116,3 +116,28 @@ vi /etc/hosts
 ```
 authselect select nis --force
 ```
+```
+Backup stored at /var/lib/authselect/backups/2019-10-17-01-18-26.zBmEkS
+Profile "nis" was selected.
+The following nsswitch maps are overwritten by the profile:
+- aliases
+- automount
+- ethers
+- group
+- hosts
+- initgroups
+- netgroup
+- networks
+- passwd
+- protocols
+- publickey
+- rpc
+- services
+- shadow
+
+Make sure that NIS service is configured and enabled. See NIS documentation for more information.
+```
+set if you need (create home directory when initial login)
+```
+authselect enable-feature with-mkhomedir
+```
