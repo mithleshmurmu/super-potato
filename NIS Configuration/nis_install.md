@@ -94,3 +94,18 @@ set NIS domain
 ```
 ypdomainname concept.lan
 ```
+```
+echo "NISDOMAIN=concept.lan" >> /etc/sysconfig/network
+```
+```
+vi /etc/yp.conf
+```
+```
+# add to the end
+# [domain (NIS domain) server (NIS server)]
+domain concept.lan server master.concept.lan
+```
+```
+vi /etc/hosts
+```
+
