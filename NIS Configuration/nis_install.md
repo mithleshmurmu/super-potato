@@ -211,3 +211,19 @@ vi /etc/hosts
 ```
 systemctl enable --now rpcbind ypserv ypxfrd yppasswdd nis-domainname
 ```
+synchronize databases with NIS master server
+```
+/usr/lib64/yp/ypinit -s master.concept.lan
+```
+```
+We will need a few minutes to copy the data from dlp.srv.world.
+Transferring group.bygid...
+Trying ypxfrd ... success
+...
+...
+At this point, make sure that /etc/passwd and /etc/group have
+been edited so that when the NIS is activated, the data bases you
+have just created will be used, instead of the /etc ASCII files.
+
+----------------------------------------------------------------
+```
